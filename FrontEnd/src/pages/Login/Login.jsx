@@ -1,6 +1,6 @@
 import React from 'react'
 import './Login.css'
-import logo from '/Users/kumaranjayaraman/Desktop/netflix clone/src/assets/logo.png'
+import logo from '../../assets/logo.png'
 const Login = () => {
   return (
     <div className='login'>
