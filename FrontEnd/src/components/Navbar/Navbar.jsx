@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import './Navbar.css'
 import logo from '../../assets/logo.png'
+import logo1 from '../../assets/logo1.png'
 import search_icon from '../../assets/search_icon.svg'
 import bell_icon from '../../assets/bell_icon.svg'
 import profile_img from '../../assets/profile_img.png'
@@ -23,7 +24,7 @@ const Navbar = () => {
   return (
     <div ref={navRef} className='navbar'>
       <div className="navbar-left">
-        <img src={logo} alt="" />
+        <img src={logo1} alt="" />
         <ul>
           <li>Home</li>
           <li>Tv shows</li>
