@@ -23,7 +23,13 @@ const TitleCards = ({title, category}) => {
 
   const handleWheel = (event)=>{
     event.preventDefault();
-    cardsRef.current.scrollLeft += event.deltaY;
+    const isTouchpad = Math.abs(event.deltaX) > 0 || Math.abs(event.deltaY) < 15;
+    
+    if (isTouchpad) {
+      cardsRef.current.scrollLeft += event.deltaX;
+    } else {
+      cardsRef.current.scrollLeft += event.deltaY;
+    }
   }
 
   useEffect(() => {
