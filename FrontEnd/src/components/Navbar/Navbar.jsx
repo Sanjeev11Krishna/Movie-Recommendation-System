@@ -45,7 +45,6 @@ const Navbar = () => {
           <li>Browse by Languages</li>
         </ul>
       </div>
-
       <div className="navbar-right">
         <img src={search_icon} alt="Search" className='icons'/>
         <p>Children</p>
