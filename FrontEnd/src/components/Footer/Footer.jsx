@@ -15,14 +15,11 @@ const Footer = () => {
         <img src={youtube_icon} alt="" />
       </div>
       <ul>
-        <li>Audio Description</li>
-        <li>Help Centre</li>
-        <li>Terms of Use</li>
-        <li>Privacy</li>
-        <li>Legal Notices</li>
-        <li>Contact Us</li>
+        <li>The Team</li>
+        <li>Git Link</li>
+        
       </ul>
-      <p className="copyright-text"> 2023 Netflix, Inc.</p>
+      <p className="copyright-text"> RecomMovies - A Movie Recommendation System</p>
     </div>
   )
 }
