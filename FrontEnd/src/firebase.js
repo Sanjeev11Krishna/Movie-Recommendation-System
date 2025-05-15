@@ -84,4 +84,19 @@ const logout = () => {
     });
 };
 
-export { auth, db, login, signup, logout };
+const logUserInteraction = async (uid, interactionType, movieId) => {
+  try {
+    await addDoc(collection(db, "user_interactions"), {
+      uid: uid,
+      interactionType: interactionType,  // e.g., "watch_trailer"
+      movieId: movieId,
+      timestamp: new Date(),
+    });
+    console.log("Interaction logged:", interactionType, movieId);
+  } catch (error) {
+    console.error("Error logging interaction:", error);
+  }
+};
+
+
+export { auth, db, login, signup, logout, logUserInteraction};
