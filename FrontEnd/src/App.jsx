@@ -3,6 +3,7 @@ import Home from './pages/home/Home';
 import { Routes, Route, useNavigate } from 'react-router-dom';
 import Player from './pages/Player/Player';
 import Login from './pages/Login/Login';
+import Team from './pages/team/Team'
 import { onAuthStateChanged } from 'firebase/auth';
 import { auth } from './firebase';
 import { ToastContainer } from 'react-toastify';
@@ -42,6 +43,7 @@ const App = () => {
         <Route path='/' element={<Home />} />
         <Route path='/login' element={<Login />} />
         <Route path='/player/:id' element={<Player />} />
+        <Route path='/team' element={<Team />} />
       </Routes>
     </div>
   );
