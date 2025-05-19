@@ -1,12 +1,17 @@
 import React from 'react';
 import './Team.css';
+import sanjeev from '../../assets/members/Sanjeev.jpg';
+import gokul from '../../assets/members/Gokul.jpg';
+import saravana from '../../assets/members/Saravana.jpg';
+import prakalya from '../../assets/members/Prakalya.jpg';
+import jaya from '../../assets/members/jaya.jpg';
 
 const teamMembers = [
-  { name: 'Sanjeev Krishna T', role: 'Team Lead', image: '/images/image_test.JPG' },
-  { name: 'Gokula Krishnan M', role: 'Model Developer', image: '/images/image_test.JPG' },
-  { name: 'Saravanavel C', role: 'Frontend Developer, Documentation', image: '/images/image_test.JPG' },
-  { name: 'Jayantha Sri M', role: 'EDA, Frontend Developer', image: '/images/image_test.JPG' },
-  { name: 'Prakalya M', role: 'Data Preprocessing', image: '/images/image_test.JPG' },
+  { name: 'Sanjeev Krishna T', role: 'Team Lead, Feature Engineering', image: sanjeev },
+  { name: 'Gokula Krishnan M', role: 'Model Developer', image: gokul },
+  { name: 'Saravanavel C', role: 'Frontend Developer, Documentation', image: saravana },
+  { name: 'Jayantha Sri M', role: 'EDA, Frontend Developer', image: jaya },
+  { name: 'Prakalya M', role: 'Data Cleaning', image: prakalya },
 ];
 
 const Team = () => {
