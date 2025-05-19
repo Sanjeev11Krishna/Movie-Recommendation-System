@@ -6,7 +6,8 @@ import Login from './pages/Login/Login';
 import { onAuthStateChanged } from 'firebase/auth';
 import { auth } from './firebase';
 import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css'; // ✅ Import Toastify styles
+import 'react-toastify/dist/ReactToastify.css';
+import Recommendation from './components/Recommendation'; // ✅ Import stays
 
 const App = () => {
   const navigate = useNavigate();
@@ -42,6 +43,8 @@ const App = () => {
         <Route path='/' element={<Home />} />
         <Route path='/login' element={<Login />} />
         <Route path='/player/:id' element={<Player />} />
+        <Route path='/player/:id/recommendations' element={<Recommendation />} /> {/* ✅ Dynamic movieId route */}
+        <Route path='/recommendations' element={<Recommendation />} /> {/* optional fallback */}
       </Routes>
     </div>
   );
